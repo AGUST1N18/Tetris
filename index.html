@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tetris Game</title>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Tetris Game</h1>
+        <div id="start-menu" class="menu" hidden>
+            <button type="button" id="start-button">Play!!</button>
+        </div>
+        <div class="game-container">
+            <div class="side-bar">
+                <div class="top-bar">
+                    <button class="btn-audio">Play Sound</button>
+                    <span>Score: <span class="score">0</span></span>
+                </div>
+                <h2>Controls</h2>
+                <ul>
+                    <li>Left Arrow: Move Left</li>
+                    <li>Right Arrow: Move Right</li>
+                    <li>Down Arrow: Move Down</li>
+                    <li>Up Arrow: Rotate</li>
+                    <li>Esc: Pause</li>
+                </ul>
+            </div>
+            <canvas></canvas>
+        </div>
+        <div id="game-over-menu" class="menu" hidden>
+            <h2>Game Over</h2>
+            <p>Your score: <span class="score"></span></p>
+            <p>Press Enter to restart the game.</p>
+            <button type="button" class="restart-btn">Restart</button>
+        </div>
+        <div id="pause-menu" class="menu" hidden>
+            <h2>Game Paused</h2>
+            <p>Press Esc to resume the game.</p>
+            <div class="pause-buttons">
+                <button type="button" id="resume-btn">Resume</button>
+                <button type="button" class="restart-btn">Restart</button>
+                <button class="btn-audio">Pause Sound</button>
+            </div>
+        </div>
+        
+        <img hidden src="assets/blocks/red_block.png" alt="redblock" id="red-block">
+        <img hidden src="assets/blocks/blue_block.png" alt="blueblock" id="blue-block">
+        <img hidden src="assets/blocks/green_block.png" alt="greenblock" id="green-block">
+        <img hidden src="assets/blocks/yellow_block.png" alt="yellowblock" id="yellow-block">
+        <img hidden src="assets/blocks/purple_block.png" alt="purpleblock" id="purple-block">
+        <img hidden src="assets/blocks/pink_block.png" alt="pinkblock" id="pink-block">
+        <img hidden src="assets/blocks/cyan_block.png" alt="cyanblock" id="cyan-block">
+    </body>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #a7a7a7;
+
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+span {
+    font-size: 18px;
+}
+canvas {
+    display: flex;
+    grid-column: 2;
+    background: #92a1b9;
+    outline: 4px solid #000;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    width: 100%;
+    gap: 20px;
+}
+
+.side-bar {
+    width: 400px; 
+    justify-self: end;
+    grid-column: 1;
+    margin-right: 40px;
+
+    & ul {
+        list-style-type: none;
+        padding: 0px 10px;
+    }
+    & li {
+        margin-bottom: 5px; 
+        font-size: 15px;    
+        line-height: 1.5;
+    }
+}   
+
+.top-bar { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
+}
+
+#score {
+    font-size: inherit;
+}
+
+button {
+    font-family: 'Press Start 2P', system-ui, sans-serif;
+    font-size: 12px;
+    color: black;
+    background-color: #c0c0c0; 
+    padding: 12px 16px;
+    
+    border: none;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+
+    box-shadow: 
+        inset 4px 4px 0px 0px #ffffff,
+        inset -4px -4px 0px 0px #555555,
+        0px 0px 0px 4px #000000; 
+    
+    margin-bottom: 20px; 
+}
+
+button:active {
+    box-shadow: 
+        inset 4px 4px 0px 0px #555555,
+        inset -4px -4px 0px 0px #ffffff,
+        0px 0px 0px 4px #000000;
+    
+    padding: 14px 14px 10px 18px; 
+}
+
+#start-button {
+    font-size: 30px;
+    padding: 20px 30px;
+
+}
+
+.menu {
+    position: fixed;
+    inset: 0; 
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Asegura que quede por encima del canvas y todo lo demás */
+}
+
+.menu h2,
+.menu p {
+    text-shadow: 2px 2px 0 #ffffff, -2px 2px 0 #ffffff;
+    color: #000;
+}
+
+.menu[hidden] {
+    display: none;
+}
+
+
+* {
+  font-family: 'Press Start 2P', system-ui, -apple-system, sans-serif;
+}
+
