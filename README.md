@@ -27,7 +27,7 @@ Al estar construido sin frameworks ni dependencias externas, ejecutar el juego e
 
 1.  **Clona este repositorio:**
     ```bash
-    git clone [https://github.com/AGUST1N18/Tetris.git](https://github.com/AGUST1N18/Tetris.git)
+    git clone https://github.com/AGUST1N18/Tetris.git
     ```
 2.  **Estructura de archivos requerida:** Asegúrate de que las imágenes de los bloques y el audio existan en tu directorio de trabajo (según las rutas del código original).
     *   Imágenes: `<img id="red-block" src="...">` (etc.)
